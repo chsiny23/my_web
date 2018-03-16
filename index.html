@@ -5,83 +5,311 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style>
-
-
-
-
-
-    body {
-      position: relative; 
-  }
-  #section1 {padding-top:50px;height:500px;color: #fff; background-color: #D4DFE6;}
-  #section2 {padding-top:50px;height:500px;color: #fff; background-color: #8EC0E4;}
-  #section3 {padding-top:50px;height:500px;color: #fff; background-color: #CADBE9;}
-  #section41 {padding-top:50px;height:500px;color: #fff; background-color: #6AAFE6;}
-  #section42 {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
-    </style>
+    <link href="fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <title>Index</title>
 </head>
+<style>
+    .header {
+        border: none;
+        margin: 0;
+        text-align: center;
+        font-size: 60px;
+        margin-top: 20px;
+        color: black;
+    }
+
+    .home {
+        position: relative;
+        width: 100%;
+        height: 700px;
+        margin: 0;
+        background-image: url(home.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+    }
+
+    .homefilter {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.25);
+
+
+    }
+
+    .name {
+        font-size: 30px;
+        color:rgb(248, 234, 225);
+    }
+
+    .des {
+        color: white;
+        margin: 20px;
+    }
+
+    .aboutpage {
+        position: relative;
+        width: 100%;
+        height: 750px;
+
+    }
+
+    .experience {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        height: 750px;
+        background-color: rgb(199, 210, 236);
+
+    }
+
+    .education {
+        position: absolute;
+        width: 50%;
+        height: 750px;
+        background-color: rgb(89, 94, 133);
+        border-right: 5px ;
+        border-color: rgb(56, 62, 117);
+
+    }
+
+    .education h1 {
+        margin: 400px 0 0 50px;
+        color: rgb(37, 36, 36);
+    }
+
+    .experience h1 {
+        margin: 80px 0 0 50px;
+        color: white;
+    }
+    .experience h3{
+        margin:40px 0 0 120px;
+        color: rgb(10, 23, 99);
+    }
+    .experience h4{
+        margin:20px 0 0 120px;
+        color: rgb(64, 64, 160);
+        font-size: 15px;
+    }
+
+    /* Styling */
+
+
+    .timeline {
+        margin: 350px auto;
+        position: absolute;
+        z-index: 1;
+        
+    }
+
+
+    .timeline:before {
+        background-color: rgb(56, 62, 117);
+        content: '';
+        margin-left: -1px;
+        position: absolute;
+        top: -350px;
+        left: 629px;
+        width: 5px;
+        height: 750px;
+    }
+    
+
+    .timeline-event {
+        position: relative;
+        list-style-type: none;
+        width: 400px;
+        height: 100px;
+        left: 120px;
+        top: 180px;
+    }
+
+
+    .timeline-event:hover .timeline-event-icon {
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        background-color: #e783a5;
+    }
+
+    .timeline-event-content {
+        padding: 2em;
+        position: absolute;
+        top: -50px;
+        left: -50px;
+        margin-left: 80px;
+        width: 400px;
+        height: 200px;
+
+    }
+
+    .timeline-event-content h3 {
+        font-size: 20px;
+        color: rgb(255, 222, 196);
+
+
+    }
+
+    .timeline-event-content h4 {
+        font-size: 15px;
+        color: black;
+    }
+
+
+    .timeline-event-icon {
+        -moz-transition: -moz-transform 0.2s ease-in;
+        -o-transition: -o-transform 0.2s ease-in;
+        -webkit-transition: -webkit-transform 0.2s ease-in;
+        transition: transform 0.5s ease-in;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        background-color: rgb(41, 28, 102);
+        display: block;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 463px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .gallery {
+        position: relative;
+        width: 100%;
+        height: 750px;
+        background-color: rgb(225, 233, 248);
+
+    }
+    .gallery h1{
+        margin: 0;
+        padding-top: 50px;
+        text-align: center;
+
+    }
+    .contact{
+        position: relative;
+        width: 100%;
+        height: 350px;
+        background-color: rgb(15, 28, 53);
+    }
+    .contact h1{
+        margin: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: rgb(252, 252, 246);
+
+    }
+</style>
 
 <body>
-    <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>                        
-              </button>
-              <a class="navbar-brand" href="#">WebSiteName</a>
-            </div>
-            <div>
-              <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                  <li><a href="#section1">About</a></li>
-                  <li><a href="#section2">Section 2</a></li>
-                  <li><a href="#section3">Section 3</a></li>
-                  <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Section 4 <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#section41">Section 4-1</a></li>
-                      <li><a href="#section42">Section 4-2</a></li>
+
+    <div class="home" style="height:700px;">
+        <div class="homefilter"></div>
+        <nav class=" navbar-default" style="background-color:rgba(255, 255, 255, 0)">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Home</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </div>
-        </nav>    
-        
-        <div id="section1" class="container-fluid">
-          <h1>Section 1</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+        </nav>
+
+        <div class="header">
+            <header>Do What You Love</header>
         </div>
-        <div id="section2" class="container-fluid">
-          <h1>Section 2</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+        <div class="text-center">
+            <h3 class="margin">About</h3>
+            <img src="self.jpg" class="img-responsive img-circle margin" style="display:inline" alt="self" width="150" height="150">
+            <h3 class="name">Chunhsin Yang</h3>
+            <p class="des">“The brick walls are there for a reason.<br> The brick walls are not there to keep us out.<br> The brick walls are there to give us a chance to show how badly we want something.<br> Because the brick walls are there to stop the people who don’t want it badly enough. <br>They’re there to stop the other people.” 
+                   <br><br> ― Randy Pausch, The Last Lecture
+                </p>
         </div>
-        <div id="section3" class="container-fluid">
-          <h1>Section 3</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+    </div>
+    <div class="aboutpage">
+        <div class="timeline">
+        <ul >
+            <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-content">
+                    <h3>National Taiwan University</h3>
+                    <h4>Institute of Health Policy and Management</h4>
+                </div>
+            </li>
+            <li class="timeline-event">
+                <label class="timeline-event-icon"></label>
+                <div class="timeline-event-content">
+                    <h3>National Cheng Kung University</h3>
+                    <h4>Department of Medical Laboratory Science and Biotechnology</h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+        <div class="education">
+
+            <h1>
+                <b>Education</b>
+            </h1>
         </div>
-        <div id="section41" class="container-fluid">
-          <h1>Section 4 Submenu 1</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+
+        <div class="experience">
+            <h1>
+                <b>Experience</b>
+            </h1>
+            <h3> Ministry of Health and Welfare</h3>
+            <h4>Office of International Cooperation</h4>
+
+
         </div>
-        <div id="section42" class="container-fluid">
-          <h1>Section 4 Submenu 2</h1>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
-          <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+
+    </div>
+    <div class="gallery">
+        <h1><b>Gallery</b></h1>
+        <img src="gallery1.jpg" alt="pic1" style="width:400px;height:300px ;margin:50px 50px;">
+
+    </div>
+    <div class="contact">
+            <h1><b>Contact</b></h1>
+            
+    
         </div>
+
+
+
+
 </body>
 
 </html>
